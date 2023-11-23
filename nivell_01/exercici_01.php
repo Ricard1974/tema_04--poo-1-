@@ -15,8 +15,12 @@ class Employee{
 
     // iniciar o construir
 
-    public function __construct($nom,$sou)
-    {
+    // public function __construct($nom,$sou)
+    // {
+    //     $this->nom = $nom;
+    //     $this->sou = $sou;
+    // }
+    public function initialize($nom,$sou){
         $this->nom = $nom;
         $this->sou = $sou;
     }
@@ -35,14 +39,18 @@ class Employee{
     
 }
 
-$empleat= new Employee('Manu',5000); // es crea un nou empleat, dos dades com es demanen en el constructor
-$empleat->imprimirInfo();
+// $empleat= new Employee('Manu',5000); // es crea un nou empleat, dos dades com es demanen en el constructor
+// $empleat->imprimirInfo();
 
-$empleat= new Employee('Pepe',7000);
+// $empleat= new Employee('Pepe',7000);
 
-$empleat->imprimirInfo();
+// $empleat->imprimirInfo();
+$empleat3= new Employee();
+$empleat3->initialize('Dani',3000);
 
-$empleat= new Employee('Marta',6000);
+$empleat3->imprimirInfo();
 
-$empleat->imprimirInfo();
+// $empleat= new Employee('Marta',6000);
+
+// $empleat->imprimirInfo();
 ?>
