@@ -15,7 +15,7 @@ A més, programa el mètode getTotalThrows que ha de mostrar el nombre total de 
 
 
 
-class dado {
+class Dado {
     private $puntos;
     private $figuras = ["As", "K", "Q", "J", "7", "8"];
 
@@ -29,7 +29,7 @@ class dado {
     }
 }
 $numeroTiradas= 5;
-$mi_dado = new dado();
+$mi_dado = new Dado();
 
 for ($i = 0; $i < $numeroTiradas; $i++) {
     echo "<br>Ha salido " . $mi_dado->shapeName();
