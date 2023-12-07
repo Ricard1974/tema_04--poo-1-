@@ -1,32 +1,21 @@
 <?php
 
-include_once 'Cinema.php';
-include_once 'Peli.php';
+include_once 'Class/Cinema.php';
+include_once 'Class/Peli.php';
 
 
-$entradadadescinema1 = new Cinema("El nom de la sala de cine", "La direccio de la sala");
+$entradadadescinema1 = new Cinema("Cinema Imperial", "Av.Rambla , Sabadell #08222");
 $entradadadescinema1->afegir_pelis([
-    new Peli("el titol de la peli", 90, "el nom del director"),
+
+new Peli("La ventana indiscreta", 90, "Alfred Hitchcock"),
+new Peli("La noche del cazador", 90, "Charles Laughton"),
+new Peli("La naranja mecánica", 90, "Stanley Kubrick"),
+new Peli("El resplandor", 90, "Stanley Kubrick"),
+new Peli("El club de la lucha", 90, "David Fincher"),
+new Peli("Mulholland Drive", 90, "David Lynch"),
+new Peli("Inception", 90, "Christopher Nolan"),
+new Peli("El resplandor de la luna llena", 90, "Ryusuke Hamaguchi"),
+new Peli("El triángulo de las Bermudas", 90, "Rodrigo Cortés"),
 ]);
-
-foreach ($entradadadescinema1->pelicules as $peli) {
-    echo "<h4>{$entradadadescinema1->nomsala}</h4>";
-    echo "<h4>{$peli->nompeli}</h4>";
-    echo "<p>{$peli->duracio} minuts</p>";
-    echo "<p>{$peli->director}</p>";
-}
-
-
-$entradadadescinema2 = new Cinema("El nom de la sala de cine 2", "La direccio de la sala 2");
-$entradadadescinema2->afegir_pelis([
-    new Peli("el titol de la peli 2", 95, "el nom del director2"),
-]);
-
-foreach ($entradadadescinema2->pelicules as $peli) {
-    echo "<h4>{$entradadadescinema2->nomsala}</h4>";
-    echo "<h4>{$peli->nompeli}</h4>";
-    echo "<p>{$peli->duracio} minuts</p>";
-    echo "<p>{$peli->director}</p>";
-}
 
 ?>
